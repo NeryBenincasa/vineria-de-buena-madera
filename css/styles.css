@@ -498,6 +498,7 @@ nav.scrolled {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: start;
 }
 .tabla-card-wide {
   position: relative;
@@ -528,7 +529,6 @@ nav.scrolled {
   transition: transform .5s ease;
 }
 .producto-card:hover img { transform: scale(1.04); }
-.producto-card.wide { grid-column: span 2; }
 
 .producto-content h3 {
   font-family: var(--font-serif);
@@ -778,6 +778,8 @@ nav.scrolled {
   width: 100%;
   height: auto;
   display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
   transition: transform .4s ease;
 }
 .gallery-strip-item:hover img { transform: scale(1.04); }
@@ -1125,7 +1127,6 @@ footer {
   .tablas-grid           { grid-template-columns: 1fr 1fr; }
   .tablas-grid .tabla-card:nth-child(3) { grid-column: span 2; }
   .productos-grid        { grid-template-columns: 1fr 1fr; }
-  .producto-card.wide    { grid-column: span 1; }
   .planes-grid           { grid-template-columns: 1fr 1fr; }
   .planes-grid .plan-card:nth-child(3) { grid-column: span 2; max-width: 360px; margin: 0 auto; }
   .benefit-grid          { gap: 48px; }
@@ -1158,7 +1159,6 @@ footer {
   .tablas-grid-wide    { grid-template-columns: 1fr; }
 
   .productos-grid      { grid-template-columns: 1fr 1fr; }
-  .producto-card.wide  { grid-column: auto; }
 
   .benefit-grid        { grid-template-columns: 1fr; gap: 40px; }
   .planes-grid         { grid-template-columns: 1fr; }
