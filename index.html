@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Buena Madera – Vinería &amp; Charcutería | Rosario</title>
+  <meta name="description" content="Vinería y Charcutería artesanal en Rosario. Tablas gourmet, fiambres seleccionados, vinos y Club DBM. Italia 954 y Córdoba 1725." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">De <span>Buena</span> Madera</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#club">Club DBM</a></li>
+        <li><a href="#horarios">Contacto</a></li>
+        <li>
+          <a href="#" class="nav-cta" data-open-modal>Sumate al Club</a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO — video de fondo
+  ══════════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline id="hero-video">
+        <source src="imagenes/videoCorte.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Vinería &amp; Charcutería — Rosario</div>
+      <h1 class="hero-title">De Buena<br><em>Madera</em></h1>
+      <p class="hero-subtitle">
+        Fiambrería artesanal, vinos cuidadosamente seleccionados y tablas que son una obra de arte.<br>
+        Dos locales en el corazón de Rosario.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-primary">
+          <svg class="icon-wa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+          </svg>
+          Pedí por WhatsApp
+        </a>
+        <a href="#tablas" class="btn-outline">
+          Ver tablas
+          <svg class="icon-arr" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NOSOTROS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-images fade-in">
+          <img class="about-img-main"   src="imagenes/PRODUCTO/jamon crudo.jpg" alt="Jamón crudo artesanal" />
+          <img class="about-img-accent" src="imagenes/PRODUCTO/tomates.jpg"     alt="Tomates secos" />
+          <div class="about-stat">
+            <div class="about-stat-number">9.4</div>
+            <div class="about-stat-label">Puntuación<br>Google</div>
+          </div>
+        </div>
+
+        <div class="about-text fade-in">
+          <span class="section-tag">Quiénes somos</span>
+          <h2 class="section-title">Una experiencia que entra por los ojos y se queda en el paladar</h2>
+          <div class="divider"></div>
+          <p class="section-lead">
+            Somos una vinoteca y charcutería artesanal ubicada en Rosario. Nos especializamos en productos de calidad: fiambres seleccionados, tablas gourmet, vinos cuidadosamente elegidos y mucho más. Nos apasiona lo que hacemos y eso se nota en cada detalle.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">🍷</div>
+              <div class="about-feature-title">Vinos seleccionados</div>
+              <div class="about-feature-text">Curaduría de etiquetas nacionales e importadas</div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🧀</div>
+              <div class="about-feature-title">Charcutería fina</div>
+              <div class="about-feature-text">Fiambres y quesos de primera calidad</div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🎁</div>
+              <div class="about-feature-title">Gift Cards &amp; Regalos</div>
+              <div class="about-feature-text">Cajas artesanales perfectas para regalar</div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🚚</div>
+              <div class="about-feature-title">Delivery en Rosario</div>
+              <div class="about-feature-text">Envío a domicilio con el Club DBM</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TABLAS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="tablas">
+    <div class="container">
+
+      <div class="section-header centered fade-in">
+        <span class="section-tag">Tablas artesanales</span>
+        <h2 class="section-title">Nuestras Tablas</h2>
+        <p class="section-lead">Elaboradas con los mejores fiambres, quesos y acompañamientos. Perfectas para compartir en cualquier ocasión.</p>
+      </div>
+
+      <!-- Fila 1: 3 cartas retrato -->
+      <div class="tablas-grid fade-in">
+
+        <div class="tabla-card">
+          <img src="imagenes/TABLAS/tabla clasica.jpg" alt="Tabla Clásica" />
+          <div class="tabla-card-overlay"></div>
+          <div class="tabla-card-content">
+            <span class="product-tag">Clásica</span>
+            <h3 class="tabla-card-name">Tabla Clásica</h3>
+            <p class="tabla-card-desc">Los mejores fiambres y quesos de la casa.</p>
+          </div>
+        </div>
+
+        <div class="tabla-card featured">
+          <img src="imagenes/TABLAS/tabla premium.jpg" alt="Tabla Premium" />
+          <div class="tabla-card-overlay"></div>
+          <div class="tabla-card-content">
+            <span class="product-tag gold">Premium</span>
+            <h3 class="tabla-card-name">Tabla Premium</h3>
+            <p class="tabla-card-desc">Selección gourmet de productos de alta gama.</p>
+          </div>
+        </div>
+
+        <div class="tabla-card">
+          <img src="imagenes/TABLAS/tabla quesos.jpg" alt="Tabla de Quesos" />
+          <div class="tabla-card-overlay"></div>
+          <div class="tabla-card-content">
+            <span class="product-tag">Quesos</span>
+            <h3 class="tabla-card-name">Tabla de Quesos</h3>
+            <p class="tabla-card-desc">Variedad de quesos artesanales seleccionados.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila 2: 2 cartas wide -->
+      <div class="tablas-grid-wide fade-in">
+
+        <div class="tabla-card-wide">
+          <img src="imagenes/TABLAS/tablas.jpg" alt="Tablas DBM" />
+          <div class="tabla-card-overlay"></div>
+          <div class="tabla-card-content">
+            <span class="product-tag">La casa</span>
+            <h3 class="tabla-card-name">Tablas DBM</h3>
+            <p class="tabla-card-desc">Nuestra propuesta completa. La armamos a tu medida.</p>
+            <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-outline-sm">Pedí la tuya</a>
+          </div>
+        </div>
+
+        <div class="tabla-card-wide">
+          <img src="imagenes/TABLAS/tablas 2.jpg" alt="Tablas para compartir" />
+          <div class="tabla-card-overlay"></div>
+          <div class="tabla-card-content">
+            <span class="product-tag">Para compartir</span>
+            <h3 class="tabla-card-name">Para Compartir</h3>
+            <p class="tabla-card-desc">Ideales para reuniones, cumpleaños y eventos especiales.</p>
+            <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-outline-sm">Consultanos</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       PRODUCTOS — Fiambres & Delicatessen
+  ══════════════════════════════════════════════════════════ -->
+  <section id="productos">
+    <div class="container">
+
+      <div class="section-header centered fade-in">
+        <span class="section-tag">Fiambres &amp; Delicatessen</span>
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p class="section-lead">Seleccionamos los mejores fiambres, quesos y productos artesanales para que cada bocado sea una experiencia.</p>
+      </div>
+
+      <div class="productos-grid fade-in">
+
+        <div class="producto-card">
+          <img src="imagenes/PRODUCTO/jamon crudo.jpg" alt="Jamón Crudo" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Jamón Crudo</h3>
+            <p>Selección premium de jamón artesanal</p>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="imagenes/PRODUCTO/bondiola.jpg" alt="Bondiola" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Bondiola</h3>
+            <p>Curada a la perfección</p>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="imagenes/PRODUCTO/mortadela pistacho.jpg" alt="Mortadela con Pistacho" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Mortadela al Pistacho</h3>
+            <p>Sabor único e irresistible</p>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="imagenes/PRODUCTO/aceite oliva.jpg" alt="Aceite de Oliva" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Aceite de Oliva</h3>
+            <p>Acompañamiento gourmet</p>
+          </div>
+        </div>
+
+        <div class="producto-card wide">
+          <img src="imagenes/PRODUCTO/productos.jpg" alt="Productos DBM" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Delicatessen DBM</h3>
+            <p>Variedad de productos seleccionados para completar tu experiencia</p>
+          </div>
+        </div>
+
+        <div class="producto-card">
+          <img src="imagenes/PRODUCTO/tomates.jpg" alt="Tomates Secos" />
+          <div class="producto-overlay"></div>
+          <div class="producto-content">
+            <h3>Tomates Secos</h3>
+            <p>El complemento perfecto</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ── Galería integrada ── -->
+      <div class="gallery-strip-header fade-in">
+        <span class="gallery-strip-title">Un vistazo a lo nuestro</span>
+        <a href="https://www.instagram.com/de_buena_madera/" target="_blank" rel="noopener" class="gallery-link">
+          Ver Instagram →
+        </a>
+      </div>
+      <div class="gallery-strip fade-in">
+        <div class="gallery-strip-item">
+          <img src="imagenes/TABLAS/tabla.jpg" alt="Tabla DBM" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="imagenes/PRODUCTO/productos 2.jpg" alt="Productos DBM" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="imagenes/TABLAS/tablas 2.jpg" alt="Tablas para compartir" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="imagenes/PRODUCTO/producto 3.jpg" alt="Producto artesanal" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="imagenes/PRODUCTO/producto 4.jpg" alt="Producto artesanal" />
+        </div>
+        <div class="gallery-strip-item">
+          <img src="imagenes/PRODUCTO/producto 5.jpg" alt="Producto artesanal" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CLUB DBM
+  ══════════════════════════════════════════════════════════ -->
+  <section id="club">
+
+    <!-- Beneficio principal -->
+    <div class="club-benefit-banner">
+      <div class="container">
+        <div class="benefit-grid">
+
+          <div class="benefit-image fade-in">
+            <img src="imagenes/BENEFICIOS DBM/BENEFICIOS.jpg" alt="Beneficio Club DBM: delivery sin cargo" />
+          </div>
+
+          <div class="benefit-text fade-in">
+            <span class="section-tag">Club DBM</span>
+            <h2 class="section-title">Sumate al club y disfrutá beneficios exclusivos</h2>
+            <div class="divider"></div>
+            <p class="section-lead">
+              Abonando tu cuota por transferencia o en efectivo, tenés envío a domicilio programado <strong>sin cargo dentro de Rosario</strong>.
+            </p>
+            <div class="benefit-items">
+              <div class="benefit-item">
+                <span class="benefit-icon">🚚</span>
+                <span>Delivery sin cargo dentro de Rosario</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🍷</span>
+                <span>Tres botellas de la bodega del mes</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">⭐</span>
+                <span>Descuentos exclusivos en el local</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">📦</span>
+                <span>Entrega programada a domicilio</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bodega del mes (contenido dinámico desde JS) -->
+    <div class="bodega-mes-wrap">
+      <div class="container">
+        <div class="bodega-mes-header fade-in">
+          <span class="section-tag">Este mes</span>
+          <h2 class="section-title" id="bodega-nombre">Bodega del Mes</h2>
+        </div>
+        <div class="bodega-mes-card fade-in">
+          <img id="bodega-img" src="imagenes/BENEFICIOS DBM/BODEGA DEL MES.jpg" alt="Bodega del Mes" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Planes (renderizados desde JS) -->
+    <div class="planes-wrap">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-tag">Elegí tu plan</span>
+          <h2 class="section-title">Planes del Club DBM</h2>
+          <p class="section-lead">Tres opciones para que elijas la que mejor se adapta a vos. Todos incluyen delivery sin cargo y los vinos de la bodega del mes.</p>
+        </div>
+        <div class="planes-grid fade-in" id="planes-grid">
+          <!-- Renderizado por JS desde el config en main.js -->
+        </div>
+        <div class="planes-cta fade-in">
+          <button class="btn-primary" data-open-modal>
+            <svg class="icon-wa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+            </svg>
+            Quiero asociarme
+          </button>
+          <p class="planes-note">Completá el formulario y te contactamos para confirmar tu cuota</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fotos "Asociate" -->
+    <div id="asociate">
+      <div class="asociate-grid">
+        <div class="asociate-card">
+          <img src="imagenes/CLUB DBM/Asociate 1.jpg" alt="Asociate al Club DBM" />
+        </div>
+        <div class="asociate-card">
+          <img src="imagenes/CLUB DBM/Asociate 2.jpg" alt="Asociate al Club DBM" />
+        </div>
+        <div class="asociate-card">
+          <img src="imagenes/CLUB DBM/Asociate 3.jpg" alt="Asociate al Club DBM" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HORARIOS & CONTACTO
+  ══════════════════════════════════════════════════════════ -->
+  <section id="horarios">
+    <div class="container">
+      <div class="hours-grid">
+
+        <div class="fade-in">
+          <span class="section-tag">Horarios de atención</span>
+          <h2 class="section-title">¿Cuándo nos encontrás?</h2>
+          <div class="divider"></div>
+          <table class="hours-table">
+            <tbody>
+              <tr data-dia="lunes">    <td>Lunes</td>     <td>9:00 – 21:00</td></tr>
+              <tr data-dia="martes">   <td>Martes</td>    <td>9:00 – 21:00</td></tr>
+              <tr data-dia="miércoles"><td>Miércoles</td> <td>9:00 – 21:00</td></tr>
+              <tr data-dia="jueves">   <td>Jueves</td>    <td>9:00 – 21:00</td></tr>
+              <tr data-dia="viernes">  <td>Viernes</td>   <td>9:00 – 21:00</td></tr>
+              <tr data-dia="sábado">   <td>Sábado</td>    <td>9:00 – 13:00 / 18:00 – 21:00</td></tr>
+              <tr data-dia="domingo" class="closed"><td>Domingo</td><td>Cerrado</td></tr>
+            </tbody>
+          </table>
+          <div class="hours-note">
+            📌 Los horarios pueden variar en feriados. Consultanos por WhatsApp antes de venir.
+          </div>
+        </div>
+
+        <div class="hours-contact-cards fade-in">
+
+          <div class="contact-card">
+            <h3 class="contact-card-title">📍 Sucursal Italia</h3>
+            <p class="contact-card-address">Italia 954, Rosario, Santa Fe</p>
+            <p class="contact-card-phone">Tel: <a href="tel:03414250202">0341 425-0202</a></p>
+            <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-whatsapp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              Escribinos
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <h3 class="contact-card-title">📍 Sucursal Córdoba</h3>
+            <p class="contact-card-address">Córdoba 1725, Rosario, Santa Fe</p>
+            <p class="contact-card-phone">Consultanos por horarios específicos de esta sucursal</p>
+            <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-whatsapp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              Escribinos
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       RESEÑAS
+  ══════════════════════════════════════════════════════════ -->
+  <section id="resenas">
+    <div class="container">
+
+      <div class="reviews-header fade-in">
+        <span class="section-tag">Lo que dicen de nosotros</span>
+        <h2 class="section-title">Reseñas de nuestros clientes</h2>
+      </div>
+
+      <div class="reviews-rating fade-in">
+        <div class="rating-badge">
+          <div>
+            <div class="rating-number">5.0</div>
+            <div class="rating-stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <div class="rating-source">Facebook · 55 opiniones</div>
+          </div>
+        </div>
+        <div class="rating-badge">
+          <div>
+            <div class="rating-number">9.4</div>
+            <div class="rating-stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <div class="rating-source">Google · +155 opiniones</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-grid fade-in">
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Excelente atención, buenos precios, variedades de picadas y delicatessen. Un lugar que recomendaría sin dudarlo.</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div>
+              <div class="review-name">María L.</div>
+              <div class="review-platform">Google Maps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Recomiendo los sándwiches de jamón crudo y salame! Increíbles. El local tiene una onda muy especial y la atención es divina.</p>
+          <div class="review-author">
+            <div class="review-avatar">J</div>
+            <div>
+              <div class="review-name">Javier R.</div>
+              <div class="review-platform">Google Maps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Precios, cordialidad y buen ambiente. Un clásico de Rosario que no puede faltar en ninguna reunión. Las tablas son espectaculares.</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <div class="review-name">Sofía G.</div>
+              <div class="review-platform">Google Maps</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">La caja regalo que pedí fue un éxito total. Vino, quesos y fiambres de primer nivel. El packaging de madera le da un toque muy especial.</p>
+          <div class="review-author">
+            <div class="review-avatar">C</div>
+            <div>
+              <div class="review-name">Carolina M.</div>
+              <div class="review-platform">Facebook</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Me sumé al Club DBM y vale muchísimo la pena. El delivery sin cargo es una comodidad increíble. Los productos siempre impecables.</p>
+          <div class="review-author">
+            <div class="review-avatar">P</div>
+            <div>
+              <div class="review-name">Pablo T.</div>
+              <div class="review-platform">Instagram</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+          <p class="review-text">Fui a una cata y fue una experiencia increíble. Aprendés, tomás buenos vinos y la pasás genial. Muy recomendable para sorprender a alguien.</p>
+          <div class="review-author">
+            <div class="review-avatar">L</div>
+            <div>
+              <div class="review-name">Laura P.</div>
+              <div class="review-platform">Google Maps</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reviews-cta fade-in">
+        <a href="https://g.co/kgs/kjgzbK3" target="_blank" rel="noopener" class="btn-google">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+          </svg>
+          Ver todas las reseñas en Google
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════════════════════════ -->
+  <section id="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner-title">¿Listo para disfrutar?</h2>
+      <p class="cta-banner-text">
+        Hacé tu pedido por WhatsApp, visitanos en cualquiera de nuestros locales o sumate al Club DBM para disfrutar beneficios todo el año.
+      </p>
+      <div class="cta-banner-actions">
+        <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="btn-white">
+          <svg class="icon-wa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--wine)">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+          </svg>
+          Pedí ahora
+        </a>
+        <button class="btn-white-outline" data-open-modal>
+          Sumarme al Club DBM
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand-name">De <span>Buena</span> Madera</div>
+          <p class="footer-tagline">Vinería &amp; Charcutería artesanal en Rosario.<br>Calidad, pasión y buen gusto en cada detalle.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/de_buena_madera/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/debuenamadera/" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="footer-social" aria-label="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-heading">Navegación</p>
+          <ul class="footer-list">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#club">Club DBM</a></li>
+            <li><a href="#productos">Galería</a></li>
+            <li><a href="#horarios">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Nuestros Locales</p>
+          <ul class="footer-list">
+            <li>
+              <address class="footer-address">
+                <strong style="color:var(--cream);font-style:normal">Sucursal Italia</strong><br>
+                Italia 954, Rosario
+              </address>
+            </li>
+            <li>
+              <address class="footer-address">
+                <strong style="color:var(--cream);font-style:normal">Sucursal Córdoba</strong><br>
+                Córdoba 1725, Rosario
+              </address>
+            </li>
+            <li><a href="tel:03414250202">0341 425-0202</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 <span>De Buena Madera</span>. Todos los derechos reservados.</p>
+        <p class="footer-copy">Vinería &amp; Charcutería · Rosario, Santa Fe</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MODAL — FORMULARIO DE ASOCIACIÓN
+  ══════════════════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag">Club DBM</span>
+        <h3 class="modal-title" id="modal-title">Asociate al Club</h3>
+        <p class="modal-subtitle">Completá el formulario y te contactamos a la brevedad para confirmar tu plan.</p>
+      </div>
+      <form id="form-asociate" novalidate>
+        <div class="form-group">
+          <label for="f-nombre">Nombre completo *</label>
+          <input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre completo" required />
+        </div>
+        <div class="form-group">
+          <label for="f-tel">Teléfono *</label>
+          <input type="tel" id="f-tel" name="telefono" placeholder="341 000-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email (opcional)</label>
+          <input type="email" id="f-email" name="email" placeholder="tu@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="f-plan">Plan que te interesa *</label>
+          <select id="f-plan" name="plan" required>
+            <!-- Opciones renderizadas por JS desde el config -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="f-mensaje">Mensaje (opcional)</label>
+          <textarea id="f-mensaje" name="mensaje" rows="3" placeholder="¿Alguna consulta adicional?"></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">
+          <svg class="icon-wa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+          </svg>
+          Enviar por WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       WHATSAPP FLOTANTE
+  ══════════════════════════════════════════════════════════ -->
+  <a href="https://wa.link/c4dgo0" target="_blank" rel="noopener" class="wa-float" aria-label="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.558 4.116 1.533 5.849L.035 23.5a.5.5 0 0 0 .613.613l5.651-1.498A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.882 0-3.649-.5-5.178-1.377l-.372-.214-3.356.89.89-3.356-.214-.372A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
