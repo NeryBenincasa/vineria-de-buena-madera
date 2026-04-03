@@ -440,7 +440,8 @@ nav.scrolled {
   border-radius: var(--radius);
   padding: 18px;
 }
-.about-feature-icon  { font-size: 1.4rem; margin-bottom: 8px; }
+.about-feature-icon  { margin-bottom: 8px; }
+.about-feature-icon svg { width: 1.8rem; height: 1.8rem; color: var(--gold); }
 .about-feature-title { font-size: .85rem; font-weight: 600; color: var(--cream); margin-bottom: 4px; }
 .about-feature-text  { font-size: .8rem; color: var(--muted); }
 
@@ -616,7 +617,8 @@ nav.scrolled {
   font-size: .95rem;
   color: var(--cream);
 }
-.benefit-icon { font-size: 1.25rem; flex-shrink: 0; }
+.benefit-icon { flex-shrink: 0; }
+.benefit-icon svg { width: 1.25rem; height: 1.25rem; color: var(--gold); }
 
 /* Bodega del mes */
 .bodega-mes-wrap {
