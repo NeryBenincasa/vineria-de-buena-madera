@@ -8,33 +8,25 @@
    El resto de la página se actualiza solo.
    ────────────────────────────────────────────────────────────── */
 const BODEGA_DEL_MES = {
-  nombre: 'Manos Negras',
-  imagen: 'imagenes/BENEFICIOS DBM/BODEGA DEL MES.jpg'
+  nombre: 'Dualismo',
+  imagen: 'imagenes/BENEFICIOS DBM/Dualismo.jpg'
 };
 
 const PLANES_CLUB = [
   {
-    nombre: 'Standard',
-    precio: '$27.000',
-    descripcion: 'Llevate tres botellas de',
-    vino: 'Manos Negras Varietal',
-    imagen: 'imagenes/BENEFICIOS DBM/CUOTA STANDAR.jpg',
+    nombre: 'Premium',
+    precio: '$32.000',
+    descripcion: 'Incluye',
+    vino: '1 Dualismo Malbec Sangiovese + 1 Dualismo Pinot Noire',
+    imagen: 'imagenes/BENEFICIOS DBM/CuotaPremium.jpg',
     destacado: false
   },
   {
-    nombre: 'Premium',
-    precio: '$38.000',
-    descripcion: 'Llevate tres botellas de',
-    vino: 'Manos Negras Soil',
-    imagen: 'imagenes/BENEFICIOS DBM/CUOTA PREMIUM.jpg',
-    destacado: true
-  },
-  {
     nombre: 'Alta Gama',
-    precio: '$61.000',
-    descripcion: 'Llevate tres botellas de',
-    vino: 'Manos Negras Artesano',
-    imagen: 'imagenes/BENEFICIOS DBM/CUOTA ALTA GAMA.jpg',
+    precio: '$48.000',
+    descripcion: 'Incluye',
+    vino: '1 Dualismo Malbec/Sangiovese + 1 Dualismo Pinot Noire + 1 Dualismo Chenin Blanc + Tote bag de regalo',
+    imagen: 'imagenes/BENEFICIOS DBM/CuotaAltaGama.jpg',
     destacado: false
   }
 ];

@@ -646,10 +646,11 @@ nav.scrolled {
 }
 .planes-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 360px));
   gap: 24px;
   margin-bottom: 48px;
-  align-items: start;
+  align-items: stretch;
+  justify-content: center;
 }
 .plan-card {
   border-radius: 10px;
@@ -1218,8 +1219,7 @@ footer {
   .tablas-grid           { grid-template-columns: 1fr 1fr; }
   .tablas-grid .tabla-card:nth-child(3) { grid-column: span 2; }
   .productos-grid        { grid-template-columns: 1fr 1fr; }
-  .planes-grid           { grid-template-columns: 1fr 1fr; }
-  .planes-grid .plan-card:nth-child(3) { grid-column: span 2; max-width: 360px; margin: 0 auto; }
+  .planes-grid           { grid-template-columns: repeat(2, minmax(0, 360px)); }
   .benefit-grid          { gap: 48px; }
   .gallery-strip         { grid-template-columns: repeat(2, 1fr); }
   .footer-grid           { grid-template-columns: 1fr 1fr; }
@@ -1289,7 +1289,6 @@ footer {
   /* ── Club DBM ── */
   .benefit-grid     { grid-template-columns: 1fr; gap: 36px; }
   .planes-grid      { grid-template-columns: 1fr; }
-  .planes-grid .plan-card:nth-child(3) { grid-column: auto; max-width: 100%; }
   .plan-card.featured { transform: none; }
 
   /* ── Asociate ── */
