@@ -265,7 +265,7 @@
       </div>
 
       <!-- ── Galería integrada ── -->
-      <div class="gallery-strip-header fade-in">
+      <div id="galeria" class="gallery-strip-header fade-in">
         <span class="gallery-strip-title">Un vistazo a lo nuestro</span>
         <a href="https://www.instagram.com/de_buena_madera/" target="_blank" rel="noopener" class="gallery-link">
           Ver Instagram →
@@ -448,6 +448,41 @@
 
         </div>
       </div>
+
+      <!-- Mapas -->
+      <div class="maps-grid fade-in">
+        <div class="map-card">
+          <div class="map-label">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Sucursal Italia — Italia 954
+          </div>
+          <div class="map-frame-wrap">
+            <iframe
+              title="Sucursal Italia 954"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.166384543888!2d-60.65294581114501!3d-32.946616299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab159bd87701%3A0x21e8abf89863e03c!2sDe%20Buena%20Madera%20I!5e0!3m2!1ses-419!2sus!4v1775231351088!5m2!1ses-419!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        <div class="map-card">
+          <div class="map-label">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Sucursal Córdoba — Córdoba 1725
+          </div>
+          <div class="map-frame-wrap">
+            <iframe
+              title="Sucursal Córdoba 1725"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.1977184642765!2d-60.650276925433495!3d-32.94578892184336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab2952f3e11f%3A0xc5528e3dc23b9916!2sDe%20Buena%20Madera!5e0!3m2!1ses-419!2sus!4v1775231385116!5m2!1ses-419!2sus"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -628,7 +663,7 @@
             <li><a href="#tablas">Tablas</a></li>
             <li><a href="#productos">Productos</a></li>
             <li><a href="#club">Club DBM</a></li>
-            <li><a href="#productos">Galería</a></li>
+            <li><a href="#galeria">Galería</a></li>
             <li><a href="#horarios">Contacto</a></li>
           </ul>
         </div>
@@ -655,7 +690,7 @@
       </div>
       <hr class="footer-divider" />
       <div class="footer-bottom">
-        <p class="footer-copy">© 2025 <span>De Buena Madera</span>. Todos los derechos reservados.</p>
+        <p class="footer-copy">© <span id="copy-year"></span> <span>De Buena Madera</span>. Todos los derechos reservados.</p>
         <p class="footer-copy">Vinería &amp; Charcutería · Rosario, Santa Fe</p>
       </div>
     </div>

@@ -245,3 +245,7 @@ document.querySelectorAll('.hours-table tr[data-dia]').forEach(row => {
 renderBodega();
 renderPlanes();
 renderFormSelect();
+
+/* Copyright year */
+const yearEl = document.getElementById('copy-year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
