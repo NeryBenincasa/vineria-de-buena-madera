@@ -1103,10 +1103,14 @@ footer {
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 4px 20px rgba(37,211,102,.4);
-  transition: transform var(--transition), box-shadow var(--transition);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8) translateY(8px);
+  transition: opacity .3s ease, transform .3s ease, box-shadow var(--transition);
 }
-.wa-float:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.55); }
-.wa-float svg   { width: 28px; height: 28px; fill: #fff; }
+.wa-float.visible          { opacity: 1; pointer-events: auto; transform: scale(1) translateY(0); }
+.wa-float.visible:hover    { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.55); }
+.wa-float svg              { width: 28px; height: 28px; fill: #fff; }
 
 /* ────────────────────────────────────────────────────────────── */
 /*  MODAL FORMULARIO                                             */

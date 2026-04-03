@@ -45,9 +45,12 @@ const WA_NUMBER = '5493414250202';
 /* ============================================================
    NAV — scroll effect + mobile toggle
    ============================================================ */
-const navbar = document.getElementById('navbar');
+const navbar  = document.getElementById('navbar');
+const waFloat = document.querySelector('.wa-float');
 window.addEventListener('scroll', () => {
+  const heroH = document.getElementById('hero')?.offsetHeight ?? 400;
   navbar.classList.toggle('scrolled', window.scrollY > 40);
+  if (waFloat) waFloat.classList.toggle('visible', window.scrollY > heroH * 0.6);
 });
 
 const hamburger = document.getElementById('hamburger');
